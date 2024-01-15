@@ -1,0 +1,9 @@
+Application : Guess the number chosen by the random int number
+
+What I will learn : 
+- Use js algorithm
+- Background image
+- Styling a list
+- Change the text
+- Display an alert
+- Add styling to image
