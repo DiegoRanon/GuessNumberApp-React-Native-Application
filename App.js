@@ -12,13 +12,23 @@ export default function App() {
 
   function pickUserNumber(enteredNumber) {
     setUserNumber(enteredNumber)
-
+    setGameOver(false)
   } 
+
+  function onGameOver() {
+    setGameOver(true);
+  }
+
+
 
   let screen = <StartGame pickUserNumber={pickUserNumber}/>
 
   if(userNumber) {
-    screen = <GameScreen userNumber={userNumber} />
+    screen = <GameScreen userNumber={userNumber} onGameOver={onGameOver}/>
+  }
+
+  if(gameOver && userNumber) {
+    screen = <GameOver />
   }
 
   return (

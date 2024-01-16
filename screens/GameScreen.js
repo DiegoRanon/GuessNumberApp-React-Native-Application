@@ -18,9 +18,16 @@ function generateRandomBetween(min, max, exclude) {
 let minNumber = 1;
 let maxNumber = 100;
 
-function GameScreen({ userNumber }) {
+function GameScreen({ userNumber, onGameOver }) {
     const initialNumber = generateRandomBetween(1, 100, userNumber);
     const [numberGuessed, setNumberGuessed] = useState(initialNumber); 
+
+    useEffect(() => {
+        if(userNumber == numberGuessed) {
+            onGameOver()
+        }
+
+    }, [userNumber, numberGuessed, onGameOver])
 
 
     function nextNumberHandler(direction) {
@@ -32,10 +39,11 @@ function GameScreen({ userNumber }) {
         if(direction == "lower") {
             maxNumber = numberGuessed
         } else {
-            minNumber = numberGuessed
+            minNumber = numberGuessed + 1
         }
         console.log(minNumber+", "+maxNumber);
-        setNumberGuessed(minNumber, maxNumber, numberGuessed)
+        const newRandomNumber = generateRandomBetween(minNumber, maxNumber, numberGuessed)
+        setNumberGuessed(newRandomNumber)
     }
 
 
