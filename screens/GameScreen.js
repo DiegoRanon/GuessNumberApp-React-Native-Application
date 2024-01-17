@@ -65,7 +65,8 @@ export default GameScreen;
 const styles = StyleSheet.create({
     rootContainer: {
         flex: 1,
-        padding: 16
+        padding: 16,
+        alignItems: "center"
     },
     inputText: {
         marginTop: 16,
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         flexDirection: "row",
-        padding: 16
+        padding: 40
     }
 
 }); 

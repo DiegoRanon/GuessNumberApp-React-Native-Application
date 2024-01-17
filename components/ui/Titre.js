@@ -12,7 +12,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderColor: "white",
         borderWidth: 3,
-        marginTop: 30
+        marginTop: 30,
+        maxWidth: '80%',
+        width:300
 
     },
     text: {

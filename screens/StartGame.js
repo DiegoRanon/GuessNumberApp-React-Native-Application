@@ -1,12 +1,11 @@
-import { View, StyleSheet, Text, TextInput, Alert } from "react-native";
+import { View, StyleSheet, Text, TextInput, Alert, Dimensions, useWindowDimensions } from "react-native";
 import Titre from "../components/ui/Titre";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
-import { useState } from "react";
+import { useState,  } from "react";
 import Colors from "../constants/colors";
 
-
-
+const deviceHeight = Dimensions.get('window').height;
 function StartGame({pickUserNumber}) {
     const [userNumber, setUserNumber] = useState();
 
@@ -44,7 +43,8 @@ export default StartGame;
 const styles = StyleSheet.create({
     inputContainer: {
         flex: 1,
-        padding: 16
+        padding: 16,
+        alignItems: "center"
     },
     textInput: {
         borderBottomWidth: 3,
