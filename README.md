@@ -83,7 +83,7 @@ Aspiring Software Engineer with a passion for mobile development and learning th
 
 ## 📬 Feedback or Questions?
 
-Feel free to open an [issue](https://github.com/your-username/GuessNumberApp-React-Native-Application/issues) or reach out to me on [LinkedIn](https://www.linkedin.com/in/your-profile).
+Feel free to open an [issue](https://github.com/your-username/GuessNumberApp-React-Native-Application/issues) or reach out to me on [LinkedIn](https://www.linkedin.com/in/diego-ranon-986b0120a/).
 
 ---
 
